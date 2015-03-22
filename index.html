@@ -1,0 +1,2669 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.node {
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
+
+.link {
+    stroke: #ADADAD;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.js"></script>
+
+<script type="application/json" id="mis">
+{
+	"nodes":[
+		{
+			"name" : 
+				"CR-V"
+			,
+			"group" : 
+				"Honda"
+			
+		},
+		{
+			"name" : 
+				"Accord"
+			,
+			"group" : 
+				"Honda"
+			
+		},
+		{
+			"name" : 
+				"Highlander"
+			,
+			"group" : 
+				"Toyota"
+			
+		},
+		{
+			"name" : 
+				"Civic"
+			,
+			"group" : 
+				"Honda"
+			
+		},
+		{
+			"name" : 
+				"RAV4"
+			,
+			"group" : 
+				"Toyota"
+			
+		},
+		{
+			"name" : 
+				"Forester"
+			,
+			"group" : 
+				"Subaru"
+			
+		},
+		{
+			"name" : 
+				"Mazda3"
+			,
+			"group" : 
+				"Mazda"
+			
+		},
+		{
+			"name" : 
+				"Camry"
+			,
+			"group" : 
+				"Toyota"
+			
+		},
+		{
+			"name" : 
+				"CX-5"
+			,
+			"group" : 
+				"Mazda"
+			
+		},
+		{
+			"name" : 
+				"Outback"
+			,
+			"group" : 
+				"Subaru"
+			
+		},
+		{
+			"name" : 
+				"Odyssey"
+			,
+			"group" : 
+				"Honda"
+			
+		},
+		{
+			"name" : 
+				"MDX"
+			,
+			"group" : 
+				"Acura"
+			
+		},
+		{
+			"name" : 
+				"Corolla"
+			,
+			"group" : 
+				"Toyota"
+			
+		},
+		{
+			"name" : 
+				"3 Series"
+			,
+			"group" : 
+				"BMW"
+			
+		},
+		{
+			"name" : 
+				"Rogue"
+			,
+			"group" : 
+				"Nissan"
+			
+		},
+		{
+			"name" : 
+				"Escape"
+			,
+			"group" : 
+				"Ford"
+			
+		},
+		{
+			"name" : 
+				"Grand Cherokee"
+			,
+			"group" : 
+				"Jeep"
+			
+		},
+		{
+			"name" : 
+				"Altima"
+			,
+			"group" : 
+				"Nissan"
+			
+		},
+		{
+			"name" : 
+				"Pilot"
+			,
+			"group" : 
+				"Honda"
+			
+		},
+		{
+			"name" : 
+				"Sienna"
+			,
+			"group" : 
+				"Toyota"
+			
+		},
+		{
+			"name" : 
+				"Tacoma"
+			,
+			"group" : 
+				"Toyota"
+			
+		},
+		{
+			"name" : 
+				"RDX"
+			,
+			"group" : 
+				"Acura"
+			
+		},
+		{
+			"name" : 
+				"Cherokee"
+			,
+			"group" : 
+				"Jeep"
+			
+		},
+		{
+			"name" : 
+				"Prius"
+			,
+			"group" : 
+				"Toyota"
+			
+		},
+		{
+			"name" : 
+				"Sonata"
+			,
+			"group" : 
+				"Hyundai"
+			
+		},
+		{
+			"name" : 
+				"F-150"
+			,
+			"group" : 
+				"Ford"
+			
+		},
+		{
+			"name" : 
+				"RX"
+			,
+			"group" : 
+				"Lexus"
+			
+		},
+		{
+			"name" : 
+				"Fit"
+			,
+			"group" : 
+				"Honda"
+			
+		},
+		{
+			"name" : 
+				"Q5"
+			,
+			"group" : 
+				"Audi"
+			
+		},
+		{
+			"name" : 
+				"XV Crosstrek"
+			,
+			"group" : 
+				"Subaru"
+			
+		},
+		{
+			"name" : 
+				"Mazda6"
+			,
+			"group" : 
+				"Mazda"
+			
+		},
+		{
+			"name" : 
+				"Explorer"
+			,
+			"group" : 
+				"Ford"
+			
+		},
+		{
+			"name" : 
+				"Fusion"
+			,
+			"group" : 
+				"Ford"
+			
+		},
+		{
+			"name" : 
+				"Elantra"
+			,
+			"group" : 
+				"Hyundai"
+			
+		},
+		{
+			"name" : 
+				"X3"
+			,
+			"group" : 
+				"BMW"
+			
+		},
+		{
+			"name" : 
+				"Pathfinder"
+			,
+			"group" : 
+				"Nissan"
+			
+		},
+		{
+			"name" : 
+				"Wrangler"
+			,
+			"group" : 
+				"Jeep"
+			
+		},
+		{
+			"name" : 
+				"Focus"
+			,
+			"group" : 
+				"Ford"
+			
+		},
+		{
+			"name" : 
+				"Impreza"
+			,
+			"group" : 
+				"Subaru"
+			
+		},
+		{
+			"name" : 
+				"X5"
+			,
+			"group" : 
+				"BMW"
+			
+		},
+		{
+			"name" : 
+				"Accord Hybrid"
+			,
+			"group" : 
+				"Honda"
+			
+		},
+		{
+			"name" : 
+				"Santa Fe"
+			,
+			"group" : 
+				"Hyundai"
+			
+		},
+		{
+			"name" : 
+				"E-Class"
+			,
+			"group" : 
+				"Mercedes-Benz"
+			
+		},
+		{
+			"name" : 
+				"Passat"
+			,
+			"group" : 
+				"Volkswagen"
+			
+		},
+		{
+			"name" : 
+				"4Runner"
+			,
+			"group" : 
+				"Toyota"
+			
+		},
+		{
+			"name" : 
+				"C-Class"
+			,
+			"group" : 
+				"Mercedes-Benz"
+			
+		},
+		{
+			"name" : 
+				"Optima"
+			,
+			"group" : 
+				"Kia"
+			
+		},
+		{
+			"name" : 
+				"Avalon"
+			,
+			"group" : 
+				"Toyota"
+			
+		},
+		{
+			"name" : 
+				"Jetta"
+			,
+			"group" : 
+				"Volkswagen"
+			
+		},
+		{
+			"name" : 
+				"Edge"
+			,
+			"group" : 
+				"Ford"
+			
+		},
+		{
+			"name" : 
+				"Sorento"
+			,
+			"group" : 
+				"Kia"
+			
+		},
+		{
+			"name" : 
+				"Santa Fe Sport"
+			,
+			"group" : 
+				"Hyundai"
+			
+		},
+		{
+			"name" : 
+				"ES 350"
+			,
+			"group" : 
+				"Lexus"
+			
+		},
+		{
+			"name" : 
+				"Mustang"
+			,
+			"group" : 
+				"Ford"
+			
+		},
+		{
+			"name" : 
+				"Genesis"
+			,
+			"group" : 
+				"Hyundai"
+			
+		},
+		{
+			"name" : 
+				"5 Series"
+			,
+			"group" : 
+				"BMW"
+			
+		},
+		{
+			"name" : 
+				"Camry Hybrid"
+			,
+			"group" : 
+				"Toyota"
+			
+		},
+		{
+			"name" : 
+				"Legacy"
+			,
+			"group" : 
+				"Subaru"
+			
+		},
+		{
+			"name" : 
+				"M-Class"
+			,
+			"group" : 
+				"Mercedes-Benz"
+			
+		},
+		{
+			"name" : 
+				"Equinox"
+			,
+			"group" : 
+				"Chevrolet"
+			
+		}
+	],
+	"links":[
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				13
+			,
+			"value" : 
+				51
+			
+		},
+		{
+			"source" : 
+				16
+			,
+			"target" : 
+				44
+			,
+			"value" : 
+				31
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				44
+			,
+			"value" : 
+				47
+			
+		},
+		{
+			"source" : 
+				42
+			,
+			"target" : 
+				55
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				1
+			,
+			"value" : 
+				109
+			
+		},
+		{
+			"source" : 
+				3
+			,
+			"target" : 
+				40
+			,
+			"value" : 
+				31
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				40
+			,
+			"value" : 
+				53
+			
+		},
+		{
+			"source" : 
+				3
+			,
+			"target" : 
+				17
+			,
+			"value" : 
+				40
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				17
+			,
+			"value" : 
+				103
+			
+		},
+		{
+			"source" : 
+				7
+			,
+			"target" : 
+				17
+			,
+			"value" : 
+				61
+			
+		},
+		{
+			"source" : 
+				7
+			,
+			"target" : 
+				47
+			,
+			"value" : 
+				46
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				47
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				13
+			,
+			"target" : 
+				45
+			,
+			"value" : 
+				39
+			
+		},
+		{
+			"source" : 
+				42
+			,
+			"target" : 
+				45
+			,
+			"value" : 
+				33
+			
+		},
+		{
+			"source" : 
+				3
+			,
+			"target" : 
+				7
+			,
+			"value" : 
+				60
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				7
+			,
+			"value" : 
+				51
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				7
+			,
+			"value" : 
+				165
+			
+		},
+		{
+			"source" : 
+				4
+			,
+			"target" : 
+				7
+			,
+			"value" : 
+				69
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				7
+			,
+			"value" : 
+				42
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				56
+			,
+			"value" : 
+				30
+			
+		},
+		{
+			"source" : 
+				40
+			,
+			"target" : 
+				56
+			,
+			"value" : 
+				37
+			
+		},
+		{
+			"source" : 
+				7
+			,
+			"target" : 
+				56
+			,
+			"value" : 
+				50
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				22
+			,
+			"value" : 
+				51
+			
+		},
+		{
+			"source" : 
+				8
+			,
+			"target" : 
+				22
+			,
+			"value" : 
+				52
+			
+		},
+		{
+			"source" : 
+				15
+			,
+			"target" : 
+				22
+			,
+			"value" : 
+				50
+			
+		},
+		{
+			"source" : 
+				4
+			,
+			"target" : 
+				22
+			,
+			"value" : 
+				38
+			
+		},
+		{
+			"source" : 
+				16
+			,
+			"target" : 
+				22
+			,
+			"value" : 
+				59
+			
+		},
+		{
+			"source" : 
+				14
+			,
+			"target" : 
+				22
+			,
+			"value" : 
+				30
+			
+		},
+		{
+			"source" : 
+				5
+			,
+			"target" : 
+				22
+			,
+			"value" : 
+				29
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				3
+			,
+			"value" : 
+				63
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				3
+			,
+			"value" : 
+				157
+			
+		},
+		{
+			"source" : 
+				4
+			,
+			"target" : 
+				12
+			,
+			"value" : 
+				34
+			
+		},
+		{
+			"source" : 
+				7
+			,
+			"target" : 
+				12
+			,
+			"value" : 
+				80
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				12
+			,
+			"value" : 
+				54
+			
+		},
+		{
+			"source" : 
+				3
+			,
+			"target" : 
+				12
+			,
+			"value" : 
+				115
+			
+		},
+		{
+			"source" : 
+				6
+			,
+			"target" : 
+				12
+			,
+			"value" : 
+				60
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				8
+			,
+			"value" : 
+				35
+			
+		},
+		{
+			"source" : 
+				4
+			,
+			"target" : 
+				8
+			,
+			"value" : 
+				93
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				8
+			,
+			"value" : 
+				35
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				8
+			,
+			"value" : 
+				155
+			
+		},
+		{
+			"source" : 
+				6
+			,
+			"target" : 
+				8
+			,
+			"value" : 
+				48
+			
+		},
+		{
+			"source" : 
+				7
+			,
+			"target" : 
+				8
+			,
+			"value" : 
+				29
+			
+		},
+		{
+			"source" : 
+				5
+			,
+			"target" : 
+				8
+			,
+			"value" : 
+				87
+			
+		},
+		{
+			"source" : 
+				15
+			,
+			"target" : 
+				49
+			,
+			"value" : 
+				50
+			
+		},
+		{
+			"source" : 
+				22
+			,
+			"target" : 
+				49
+			,
+			"value" : 
+				29
+			
+		},
+		{
+			"source" : 
+				31
+			,
+			"target" : 
+				49
+			,
+			"value" : 
+				29
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				49
+			,
+			"value" : 
+				44
+			
+		},
+		{
+			"source" : 
+				6
+			,
+			"target" : 
+				33
+			,
+			"value" : 
+				48
+			
+		},
+		{
+			"source" : 
+				12
+			,
+			"target" : 
+				33
+			,
+			"value" : 
+				51
+			
+		},
+		{
+			"source" : 
+				3
+			,
+			"target" : 
+				33
+			,
+			"value" : 
+				64
+			
+		},
+		{
+			"source" : 
+				24
+			,
+			"target" : 
+				33
+			,
+			"value" : 
+				51
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				33
+			,
+			"value" : 
+				33
+			
+		},
+		{
+			"source" : 
+				15
+			,
+			"target" : 
+				59
+			,
+			"value" : 
+				33
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				59
+			,
+			"value" : 
+				33
+			
+		},
+		{
+			"source" : 
+				26
+			,
+			"target" : 
+				52
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				47
+			,
+			"target" : 
+				52
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				5
+			,
+			"target" : 
+				15
+			,
+			"value" : 
+				51
+			
+		},
+		{
+			"source" : 
+				8
+			,
+			"target" : 
+				15
+			,
+			"value" : 
+				86
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				15
+			,
+			"value" : 
+				98
+			
+		},
+		{
+			"source" : 
+				9
+			,
+			"target" : 
+				15
+			,
+			"value" : 
+				42
+			
+		},
+		{
+			"source" : 
+				4
+			,
+			"target" : 
+				15
+			,
+			"value" : 
+				69
+			
+		},
+		{
+			"source" : 
+				14
+			,
+			"target" : 
+				15
+			,
+			"value" : 
+				49
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				31
+			,
+			"value" : 
+				60
+			
+		},
+		{
+			"source" : 
+				18
+			,
+			"target" : 
+				31
+			,
+			"value" : 
+				41
+			
+		},
+		{
+			"source" : 
+				16
+			,
+			"target" : 
+				31
+			,
+			"value" : 
+				46
+			
+		},
+		{
+			"source" : 
+				6
+			,
+			"target" : 
+				27
+			,
+			"value" : 
+				40
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				27
+			,
+			"value" : 
+				33
+			
+		},
+		{
+			"source" : 
+				3
+			,
+			"target" : 
+				27
+			,
+			"value" : 
+				51
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				27
+			,
+			"value" : 
+				34
+			
+		},
+		{
+			"source" : 
+				12
+			,
+			"target" : 
+				37
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				3
+			,
+			"target" : 
+				37
+			,
+			"value" : 
+				43
+			
+		},
+		{
+			"source" : 
+				6
+			,
+			"target" : 
+				37
+			,
+			"value" : 
+				55
+			
+		},
+		{
+			"source" : 
+				32
+			,
+			"target" : 
+				37
+			,
+			"value" : 
+				30
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				5
+			,
+			"value" : 
+				41
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				5
+			,
+			"value" : 
+				131
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				5
+			,
+			"value" : 
+				36
+			
+		},
+		{
+			"source" : 
+				4
+			,
+			"target" : 
+				5
+			,
+			"value" : 
+				77
+			
+		},
+		{
+			"source" : 
+				7
+			,
+			"target" : 
+				32
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				17
+			,
+			"target" : 
+				32
+			,
+			"value" : 
+				33
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				32
+			,
+			"value" : 
+				53
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				16
+			,
+			"value" : 
+				47
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				2
+			,
+			"value" : 
+				35
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				2
+			,
+			"value" : 
+				62
+			
+		},
+		{
+			"source" : 
+				6
+			,
+			"target" : 
+				38
+			,
+			"value" : 
+				47
+			
+		},
+		{
+			"source" : 
+				29
+			,
+			"target" : 
+				38
+			,
+			"value" : 
+				36
+			
+		},
+		{
+			"source" : 
+				3
+			,
+			"target" : 
+				38
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				3
+			,
+			"target" : 
+				48
+			,
+			"value" : 
+				34
+			
+		},
+		{
+			"source" : 
+				6
+			,
+			"target" : 
+				48
+			,
+			"value" : 
+				29
+			
+		},
+		{
+			"source" : 
+				43
+			,
+			"target" : 
+				48
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				57
+			,
+			"value" : 
+				41
+			
+		},
+		{
+			"source" : 
+				5
+			,
+			"target" : 
+				57
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				7
+			,
+			"target" : 
+				57
+			,
+			"value" : 
+				36
+			
+		},
+		{
+			"source" : 
+				9
+			,
+			"target" : 
+				57
+			,
+			"value" : 
+				29
+			
+		},
+		{
+			"source" : 
+				26
+			,
+			"target" : 
+				58
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				28
+			,
+			"target" : 
+				58
+			,
+			"value" : 
+				31
+			
+		},
+		{
+			"source" : 
+				11
+			,
+			"target" : 
+				58
+			,
+			"value" : 
+				30
+			
+		},
+		{
+			"source" : 
+				39
+			,
+			"target" : 
+				58
+			,
+			"value" : 
+				46
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				6
+			,
+			"value" : 
+				54
+			
+		},
+		{
+			"source" : 
+				3
+			,
+			"target" : 
+				6
+			,
+			"value" : 
+				82
+			
+		},
+		{
+			"source" : 
+				7
+			,
+			"target" : 
+				30
+			,
+			"value" : 
+				31
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				30
+			,
+			"value" : 
+				81
+			
+		},
+		{
+			"source" : 
+				17
+			,
+			"target" : 
+				30
+			,
+			"value" : 
+				40
+			
+		},
+		{
+			"source" : 
+				6
+			,
+			"target" : 
+				30
+			,
+			"value" : 
+				54
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				11
+			,
+			"value" : 
+				29
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				11
+			,
+			"value" : 
+				80
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				10
+			,
+			"value" : 
+				42
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				46
+			,
+			"value" : 
+				30
+			
+		},
+		{
+			"source" : 
+				24
+			,
+			"target" : 
+				46
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				4
+			,
+			"target" : 
+				9
+			,
+			"value" : 
+				49
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				9
+			,
+			"value" : 
+				38
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				9
+			,
+			"value" : 
+				38
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				9
+			,
+			"value" : 
+				84
+			
+		},
+		{
+			"source" : 
+				8
+			,
+			"target" : 
+				9
+			,
+			"value" : 
+				54
+			
+		},
+		{
+			"source" : 
+				5
+			,
+			"target" : 
+				9
+			,
+			"value" : 
+				107
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				43
+			,
+			"value" : 
+				44
+			
+		},
+		{
+			"source" : 
+				7
+			,
+			"target" : 
+				43
+			,
+			"value" : 
+				33
+			
+		},
+		{
+			"source" : 
+				18
+			,
+			"target" : 
+				35
+			,
+			"value" : 
+				43
+			
+		},
+		{
+			"source" : 
+				31
+			,
+			"target" : 
+				35
+			,
+			"value" : 
+				37
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				35
+			,
+			"value" : 
+				69
+			
+		},
+		{
+			"source" : 
+				11
+			,
+			"target" : 
+				18
+			,
+			"value" : 
+				40
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				18
+			,
+			"value" : 
+				49
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				18
+			,
+			"value" : 
+				81
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				28
+			,
+			"value" : 
+				33
+			
+		},
+		{
+			"source" : 
+				21
+			,
+			"target" : 
+				28
+			,
+			"value" : 
+				46
+			
+		},
+		{
+			"source" : 
+				26
+			,
+			"target" : 
+				28
+			,
+			"value" : 
+				46
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				28
+			,
+			"value" : 
+				33
+			
+		},
+		{
+			"source" : 
+				11
+			,
+			"target" : 
+				28
+			,
+			"value" : 
+				43
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				4
+			,
+			"value" : 
+				194
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				4
+			,
+			"value" : 
+				67
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				4
+			,
+			"value" : 
+				40
+			
+		},
+		{
+			"source" : 
+				4
+			,
+			"target" : 
+				21
+			,
+			"value" : 
+				33
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				21
+			,
+			"value" : 
+				29
+			
+		},
+		{
+			"source" : 
+				11
+			,
+			"target" : 
+				21
+			,
+			"value" : 
+				61
+			
+		},
+		{
+			"source" : 
+				9
+			,
+			"target" : 
+				21
+			,
+			"value" : 
+				29
+			
+		},
+		{
+			"source" : 
+				8
+			,
+			"target" : 
+				21
+			,
+			"value" : 
+				37
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				21
+			,
+			"value" : 
+				56
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				21
+			,
+			"value" : 
+				33
+			
+		},
+		{
+			"source" : 
+				5
+			,
+			"target" : 
+				21
+			,
+			"value" : 
+				30
+			
+		},
+		{
+			"source" : 
+				8
+			,
+			"target" : 
+				14
+			,
+			"value" : 
+				96
+			
+		},
+		{
+			"source" : 
+				9
+			,
+			"target" : 
+				14
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				5
+			,
+			"target" : 
+				14
+			,
+			"value" : 
+				47
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				14
+			,
+			"value" : 
+				85
+			
+		},
+		{
+			"source" : 
+				4
+			,
+			"target" : 
+				14
+			,
+			"value" : 
+				59
+			
+		},
+		{
+			"source" : 
+				11
+			,
+			"target" : 
+				26
+			,
+			"value" : 
+				57
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				26
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				21
+			,
+			"target" : 
+				26
+			,
+			"value" : 
+				48
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				26
+			,
+			"value" : 
+				42
+			
+		},
+		{
+			"source" : 
+				4
+			,
+			"target" : 
+				41
+			,
+			"value" : 
+				31
+			
+		},
+		{
+			"source" : 
+				35
+			,
+			"target" : 
+				41
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				41
+			,
+			"value" : 
+				39
+			
+		},
+		{
+			"source" : 
+				8
+			,
+			"target" : 
+				41
+			,
+			"value" : 
+				33
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				41
+			,
+			"value" : 
+				56
+			
+		},
+		{
+			"source" : 
+				41
+			,
+			"target" : 
+				51
+			,
+			"value" : 
+				54
+			
+		},
+		{
+			"source" : 
+				8
+			,
+			"target" : 
+				51
+			,
+			"value" : 
+				41
+			
+		},
+		{
+			"source" : 
+				15
+			,
+			"target" : 
+				51
+			,
+			"value" : 
+				30
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				51
+			,
+			"value" : 
+				45
+			
+		},
+		{
+			"source" : 
+				2
+			,
+			"target" : 
+				19
+			,
+			"value" : 
+				39
+			
+		},
+		{
+			"source" : 
+				10
+			,
+			"target" : 
+				19
+			,
+			"value" : 
+				128
+			
+		},
+		{
+			"source" : 
+				7
+			,
+			"target" : 
+				24
+			,
+			"value" : 
+				52
+			
+		},
+		{
+			"source" : 
+				1
+			,
+			"target" : 
+				24
+			,
+			"value" : 
+				73
+			
+		},
+		{
+			"source" : 
+				17
+			,
+			"target" : 
+				24
+			,
+			"value" : 
+				50
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				24
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				8
+			,
+			"target" : 
+				50
+			,
+			"value" : 
+				33
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				50
+			,
+			"value" : 
+				35
+			
+		},
+		{
+			"source" : 
+				41
+			,
+			"target" : 
+				50
+			,
+			"value" : 
+				31
+			
+		},
+		{
+			"source" : 
+				13
+			,
+			"target" : 
+				34
+			,
+			"value" : 
+				33
+			
+		},
+		{
+			"source" : 
+				26
+			,
+			"target" : 
+				34
+			,
+			"value" : 
+				37
+			
+		},
+		{
+			"source" : 
+				11
+			,
+			"target" : 
+				34
+			,
+			"value" : 
+				29
+			
+		},
+		{
+			"source" : 
+				21
+			,
+			"target" : 
+				34
+			,
+			"value" : 
+				35
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				34
+			,
+			"value" : 
+				31
+			
+		},
+		{
+			"source" : 
+				28
+			,
+			"target" : 
+				34
+			,
+			"value" : 
+				58
+			
+		},
+		{
+			"source" : 
+				34
+			,
+			"target" : 
+				39
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				26
+			,
+			"target" : 
+				39
+			,
+			"value" : 
+				29
+			
+		},
+		{
+			"source" : 
+				11
+			,
+			"target" : 
+				39
+			,
+			"value" : 
+				38
+			
+		},
+		{
+			"source" : 
+				4
+			,
+			"target" : 
+				29
+			,
+			"value" : 
+				32
+			
+		},
+		{
+			"source" : 
+				9
+			,
+			"target" : 
+				29
+			,
+			"value" : 
+				55
+			
+		},
+		{
+			"source" : 
+				14
+			,
+			"target" : 
+				29
+			,
+			"value" : 
+				35
+			
+		},
+		{
+			"source" : 
+				8
+			,
+			"target" : 
+				29
+			,
+			"value" : 
+				55
+			
+		},
+		{
+			"source" : 
+				0
+			,
+			"target" : 
+				29
+			,
+			"value" : 
+				41
+			
+		},
+		{
+			"source" : 
+				5
+			,
+			"target" : 
+				29
+			,
+			"value" : 
+				58
+			
+		}
+	]
+}
+</script>
+
+
+<script>
+
+//Constants for the SVG
+var width = 960,
+    height = 600;
+
+//Set up the colour scale
+var color = d3.scale.category20();
+
+
+//Append a SVG to the body of the html page. Assign this SVG as an object to svg
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+//Set up the force layout
+var force = d3.layout.force()
+    .charge(-400)
+    .gravity(0.1)
+    .size([width, height]);
+
+
+var drag = force.drag()
+    .on("dragstart", dragstart);
+
+force.linkDistance(function(d) { return 4000/d.value });
+
+
+//Read the data from the mis element 
+var mis = document.getElementById('mis').innerHTML;
+graph = JSON.parse(mis);
+
+//Creates the graph data structure out of the json data
+force.nodes(graph.nodes)
+    .links(graph.links)
+    .start();
+
+//Create all the line svgs but without locations yet
+var link = svg.selectAll(".link")
+    .data(graph.links)
+    .enter().append("line")
+    .attr("class", "link")
+    .style("stroke-width", function (d) {
+    return 0.07*d.value;
+});
+
+//Do the same with the circles for the nodes - no 
+var node = svg.selectAll(".node")
+    .data(graph.nodes)
+    .enter().append("g")
+    .attr("class", "node")
+    .call(force.drag);
+
+node.append("circle")
+    .attr("r", function(d) { return d.weight+5 })
+    .style("fill", function (d) {
+    return color(d.group);
+})
+
+node.append("text")
+      .attr("dx", 10)
+      .attr("dy", ".35em")
+      .text(function(d) { return d.name })
+      .style("stroke-width", 0.1)
+      .style("stroke", "gray");
+
+node.call(force.drag)
+     .on('dblclick', connectedNodes); //Added code 
+
+
+//Now we are giving the SVGs co-ordinates - the force layout is generating the co-ordinates which this code is using to update the attributes of the SVG elements
+force.on("tick", function () {
+    link.attr("x1", function (d) {
+        return d.source.x;
+    })
+        .attr("y1", function (d) {
+        return d.source.y;
+    })
+        .attr("x2", function (d) {
+        return d.target.x;
+    })
+        .attr("y2", function (d) {
+        return d.target.y;
+    });
+    d3.selectAll("circle").attr("cx", function (d) {
+        return d.x;
+    })
+        .attr("cy", function (d) {
+        return d.y;
+    });
+    node.each(collide(1.5)); //Added 
+    d3.selectAll("text").attr("x", function (d) {
+        return d.x;
+    })
+        .attr("y", function (d) {
+        return d.y;
+    });
+});
+
+//---Insert-------
+
+//Toggle stores whether the highlighting is on
+var toggle = 0;
+
+//Create an array logging what is connected to what
+var linkedByIndex = {};
+for (i = 0; i < graph.nodes.length; i++) {
+    linkedByIndex[i + "," + i] = 1;
+};
+graph.links.forEach(function (d) {
+    linkedByIndex[d.source.index + "," + d.target.index] = 1;
+});
+
+//This function looks up whether a pair are neighbours  
+function neighboring(a, b) {
+    return linkedByIndex[a.index + "," + b.index];
+}
+
+function connectedNodes() {
+
+    if (toggle == 0) {
+        //Reduce the opacity of all but the neighbouring nodes
+        d = d3.select(this).node().__data__;
+        node.style("opacity", function (o) {
+            return neighboring(d, o) | neighboring(o, d) ? 1 : 0.1;
+        });
+        
+        link.style("opacity", function (o) {
+            return d.index==o.source.index | d.index==o.target.index ? 1 : 0.1;
+        });
+        
+        //Reduce the op
+        
+        toggle = 1;
+    } else {
+        //Put them back to opacity=1
+        node.style("opacity", 1);
+        link.style("opacity", 1);
+        toggle = 0;
+    }
+
+}
+
+//---End Insert---
+
+function dragstart(d) {
+    d3.select(this).classed("fixed", d.fixed = true);
+}
+
+var padding = 1, // separation between circles
+    radius=8;
+function collide(alpha) {
+  var quadtree = d3.geom.quadtree(graph.nodes);
+  return function(d) {
+    var rb = 2*radius + padding,
+        nx1 = d.x - rb,
+        nx2 = d.x + rb,
+        ny1 = d.y - rb,
+        ny2 = d.y + rb;
+    quadtree.visit(function(quad, x1, y1, x2, y2) {
+      if (quad.point && (quad.point !== d)) {
+        var x = d.x - quad.point.x,
+            y = d.y - quad.point.y,
+            l = Math.sqrt(x * x + y * y);
+          if (l < rb) {
+          l = (l - rb) / l * alpha;
+          d.x -= x *= l;
+          d.y -= y *= l;
+          quad.point.x += x;
+          quad.point.y += y;
+        }
+      }
+      return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+    });
+  };
+}
+
+</script>
