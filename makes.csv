@@ -1,61 +1,1 @@
-name,color
-Accord,#72FC24
-Highlander,#26CABE
-Civic,#93443D
-RAV4,#E71303
-Forester,#8390A1
-Mazda3,#28DE12
-Camry,#DD37E0
-CX-5,#12C588
-Outback,#043F05
-Odyssey,#FDE5E5
-MDX,#56CF5B
-Corolla,#A48E9B
-3 Series,#6C79AB
-Rogue,#E2EEE9
-Escape,#2A612B
-Grand Cherokee,#D4562E
-Altima,#247E28
-Pilot,#D56663
-Sienna,#2F9E7E
-Tacoma,#CD970C
-RDX,#9F3D0F
-Cherokee,#416C9B
-Prius,#183ABE
-Sonata,#C814F2
-F-150,#2DEA99
-RX,#19BB15
-Fit,#1A668D
-Q5,#FD6923
-XV Crosstrek,#A70256
-Mazda6,#FD93BB
-Explorer,#C943B4
-Fusion,#435B04
-Elantra,#684027
-X3,#E00C91
-Pathfinder,#9194AE
-Wrangler,#AD8A6B
-Focus,#6D772E
-Impreza,#D11482
-X5,#7D57AC
-Accord Hybrid,#F3D80F
-Santa Fe,#85CD76
-E-Class,#650AB9
-Passat,#3660FE
-4Runner,#7CE324
-C-Class,#0612D0
-Optima,#9D894D
-Avalon,#EDC967
-Jetta,#BD536A
-Edge,#D7FC16
-Sorento,#6BB47E
-Santa Fe Sport,#5B06F4
-ES 350,#661B60
-Mustang,#EC25D2
-Genesis,#AC8639
-5 Series,#5F9F43
-Camry Hybrid,#D8A2B0
-Legacy,#416795
-M-Class,#E5C9E8
-Equinox,#EC89D7
-CR-V,#F48F1B
+name,color,,MDX,#FF6699,,AcuraRDX,#FF6699,,Acura3 Series,#6699FF,,BMWEscape,#FF7F66,,FordCR-V,#66FF7F,,HondaAccord,#66FF7F,,HondaCivic,#66FF7F,,HondaOdyssey,#66FF7F,,HondaPilot,#66FF7F,,HondaSonata,#66FF7F,,HondaGrand Cherokee,#CC66FF,,JeepCherokee,#CC66FF,,JeepMazda3,#EB004E,,MazdaCX-5,#EB004E,,MazdaRogue,#7F66FF,,NissanAltima,#7F66FF,,NissanForester,#FFCC66,,SuburuOutback,#FFCC66,,SuburuHighlander,#66E6FF,,ToyotaRAV4,#66E6FF,,ToyotaCamry,#66E6FF,,ToyotaCorolla,#66E6FF,,ToyotaSienna,#66E6FF,,ToyotaTacoma,#66E6FF,,ToyotaPrius,#66E6FF,,Toyota
